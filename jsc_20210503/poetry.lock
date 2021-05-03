@@ -249,6 +249,18 @@ pims = ">=0.4.1"
 scipy = ">=0.19.1"
 
 [[package]]
+name = "dask-jobqueue"
+version = "0.7.2"
+description = "Deploy Dask on job queuing systems like PBS, Slurm, SGE or LSF"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+dask = ">=2.19"
+distributed = ">=2.19"
+
+[[package]]
 name = "dask-labextension"
 version = "5.0.0"
 description = "A JupyterLab extension for Dask."
@@ -1394,7 +1406,7 @@ heapdict = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "4537745781c6c6a94f805bf6eee6c80e36d4bbc1742aeece925eccff8c1d2ca9"
+content-hash = "dba5432bc725aa12b7072dcd32372a03398690fe31cd4fda9af0dba802de96a0"
 
 [metadata.files]
 aiohttp = [
@@ -1563,6 +1575,10 @@ dask = [
 ]
 dask-image = [
     {file = "dask-image-0.5.0.tar.gz", hash = "sha256:0bf7ea8dcd9d795505b498bd632394720c048f50761e23c574d9a6bacfb27cbb"},
+]
+dask-jobqueue = [
+    {file = "dask-jobqueue-0.7.2.tar.gz", hash = "sha256:1767f4146b2663d9d2eaef62b882a86e1df0bccdb8ae68ae3e5e546aa6796d35"},
+    {file = "dask_jobqueue-0.7.2-py2.py3-none-any.whl", hash = "sha256:214f34a64794044ae52b42959740356ce97302768df4416447cf6e2d28e986a2"},
 ]
 dask-labextension = [
     {file = "dask_labextension-5.0.0-py3-none-any.whl", hash = "sha256:b186b518721bfc57a800f418641245b5333e19645ee8ce4dad3557f354d04ea4"},
